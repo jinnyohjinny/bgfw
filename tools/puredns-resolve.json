@@ -1,0 +1,4 @@
+{
+    "name": "puredns-resolve",
+    "cmd": "puredns resolve output/target/subdomains/subdomains.txt -r lists/resolvers.txt | tee -a output/target/subdomains/subdomains-resolved.txt && sort -u output/target/subdomains/subdomains-resolved.txt -o output/target/subdomains/subdomains-resolved.txt"
+}

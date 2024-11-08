@@ -1,0 +1,4 @@
+{
+    "name": "massdns-resolve",
+    "cmd": "massdns -r lists/resolvers.txt -o S output/target/subdomains/subdomains.txt | awk '{print $1}' | sed 's/.$//' | tee -a output/target/subdomains/subdomains-resolved.txt && sort -u output/target/subdomains/subdomains-resolved.txt -o output/target/subdomains/subdomains-resolved.txt"
+}

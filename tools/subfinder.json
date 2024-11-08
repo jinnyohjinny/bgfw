@@ -1,0 +1,4 @@
+{
+    "name": "subfinder",
+    "cmd": "subfinder -d input | sed 's/*//g' |tee -a output/target/subdomains/subdomains.txt && sort -u output/target/subdomains/subdomains.txt -o output/target/subdomains/subdomains.txt"
+}

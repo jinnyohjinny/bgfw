@@ -1,0 +1,4 @@
+{
+    "name": "dnsx-resolve",
+    "cmd": "dnsx -r lists/resolvers.txt -l output/target/subdomains/subdomains.txt | tee -a output/target/subdomains/subdomains-resolved.txt && sort -u output/target/subdomains/subdomains-resolved.txt -o output/target/subdomains/subdomains-resolved.txt" 
+}
